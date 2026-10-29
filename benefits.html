@@ -1,0 +1,838 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benefits | GreenGrow</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F8F0;
+    font-family: "Inter", Arial, sans-serif;
+    color: #102d21;
+}
+
+a {
+    color: #064E37;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    color: #064E37;
+}
+
+.logo svg {
+    width: 44px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #064E37;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    min-height: 520px;
+    color: white;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 55, 35, 0.98) 0%,
+            rgba(0, 55, 35, 0.95) 30%,
+            rgba(0, 55, 35, 0.75) 42%,
+            rgba(0, 55, 35, 0.25) 58%,
+            transparent 75%
+        ),
+        url("Futuristic Indoor 2 Vertical Farm Corridor.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h4 {
+    margin-left: 5px;
+    color: #7AE5AE;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.15;
+}
+
+.hero span {
+    color: #7AE5AE;
+}
+
+.hero p {
+    margin-left: 7px;
+    margin-top: 30px;
+    line-height: 28px;
+    word-spacing: 3px;
+    font-size: 18px;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.intro-text {
+    width: 55%;
+}
+
+.intro h4,
+.section-label {
+    color: #5A8F74;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    color: #064E37;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #50685a;
+}
+
+.intro-note {
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+    border-left: 4px solid #BCECC7;
+    border-radius: 8px;
+}
+
+.intro-note h3 {
+    color: #064E37;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.intro-note p {
+    font-size: 16px;
+}
+
+/* BENEFIT SECTION */
+
+.main {
+    padding: 30px 0 70px;
+}
+
+.heading {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.heading h4 {
+    color: #5A8F74;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.heading h1 {
+    color: #064E37;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.heading p {
+    line-height: 28px;
+    color: #50685a;
+    font-size: 17px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin: 0 5%;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid #BCECC7;
+    border-radius: 10px;
+    padding: 30px;
+    min-height: 300px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(6, 78, 55, 0.09);
+}
+
+.number {
+    color: #5A8F74;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #BCECC7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.box h2 {
+    color: #064E37;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.box p {
+    color: #50685a;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+/* IMPACT SECTION */
+
+.impact {
+    background-color: #E6F3E5;
+    padding: 70px 6%;
+    text-align: center;
+}
+
+.impact h1 {
+    color: #064E37;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.impact > p {
+    color: #50685a;
+    line-height: 28px;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.impact-items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.impact-item {
+    padding: 25px 15px;
+    border-right: 1px solid #BCECC7;
+}
+
+.impact-item:last-child {
+    border-right: none;
+}
+
+.impact-item h2 {
+    color: #064E37;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.impact-item p {
+    color: #50685a;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.impact-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* CTA */
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 30px;
+}
+
+.content {
+    width: 1355px;
+    max-width: 100%;
+    min-height: 160px;
+    background-color: #064E37;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    gap: 40px;
+}
+
+.content h2 {
+    font-size: 27px;
+}
+
+.content button {
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 15px 24px;
+    background-color: #BCECC7;
+    color: #064E37;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: white;
+}
+
+.leaf {
+    width: 170px;
+    min-height: 100px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #5A8F74;
+}
+
+.content svg {
+    width: 90px;
+    height: 90px;
+    color: #BCECC7;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    min-height: 230px;
+    background-color: #064E37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0;
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    width: 80%;
+    min-height: 60px;
+    border-bottom: 2px solid #5A8F74;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.wrapper h2 {
+    color: white;
+}
+
+.upper ul {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.upper a {
+    color: white;
+}
+
+.upper a:hover {
+    color: #BCECC7;
+}
+
+.upper svg {
+    width: 45px;
+    height: 45px;
+    color: #BCECC7;
+}
+
+.lower {
+    margin-top: 35px;
+    color: white;
+    font-weight: normal;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        gap: 18px;
+        font-size: 16px;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .intro {
+        padding: 55px 6%;
+        gap: 30px;
+    }
+
+    .impact-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .upper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    nav {
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 25px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 50px 25px;
+    }
+
+    .intro-text,
+    .intro-note {
+        width: 100%;
+    }
+
+    .intro h2,
+    .heading h1,
+    .impact h1 {
+        font-size: 32px;
+    }
+
+    .heading {
+        margin: 0 25px 30px;
+    }
+
+    .boxes {
+        grid-template-columns: 1fr;
+        margin: 0 25px;
+    }
+
+    .impact {
+        padding: 50px 25px;
+    }
+
+    .impact-items {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .impact-item {
+        padding: 20px 8px;
+        border-right: none;
+        border-bottom: 1px solid #BCECC7;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .leaf {
+        width: 100%;
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 2px solid #5A8F74;
+        padding-bottom: 15px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content button {
+        margin: 0;
+    }
+
+    .upper {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 25px;
+    }
+
+    .upper ul {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281
+            1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+            <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212
+            8.351 15.24 11 13"/>
+        </svg>
+        <h1>GreenGrow</h1>
+    </a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="methods.html">Methods</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h4>THE BENEFITS</h4>
+
+    <h1>
+        Growing Smarter.<br>
+        <span>Living Greener.</span>
+    </h1>
+
+    <p>
+        Discover how vertical farming can make better use of space,<br>
+        support efficient water management, and bring fresh produce<br>
+        closer to the communities that need it.
+    </p>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="intro">
+    <div class="intro-text">
+        <h4>WHY IT MATTERS</h4>
+
+        <h2>Technology. Nature. A Better Future.</h2>
+
+        <p>
+            Vertical farming combines innovative growing techniques
+            with controlled environments to make food production
+            adaptable to limited spaces. By managing water, nutrients,
+            lighting, and temperature, growers can create suitable
+            conditions for healthy plant growth.
+        </p>
+    </div>
+
+    <div class="intro-note">
+        <h3>A smarter way to grow</h3>
+
+        <p>
+            From efficient resource use to local food production,
+            vertical farming offers new possibilities for growing
+            crops in a changing world.
+        </p>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+
+<section class="main" id="benefits">
+    <div class="heading">
+        <h4>OUR ADVANTAGES</h4>
+
+        <h1>Small Spaces. Greater Possibilities.</h1>
+
+        <p>
+            Explore the benefits of modern vertical farming and how
+            thoughtful growing practices can support a more
+            resource-conscious food system.
+        </p>
+    </div>
+
+    <div class="boxes">
+
+        <div class="box">
+            <div class="number">01 / WATER</div>
+            <div class="circle">💧</div>
+
+            <h2>Efficient Water Use</h2>
+
+            <p>
+                Recirculating growing systems can reuse water and
+                reduce water consumption compared with many
+                conventional growing methods.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="number">02 / SPACE</div>
+            <div class="circle">🌱</div>
+
+            <h2>Maximum Space</h2>
+
+            <p>
+                Stacked growing layers allow crops to be cultivated
+                upward, making productive use of limited indoor
+                and urban spaces.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="number">03 / PRODUCTION</div>
+            <div class="circle">☀️</div>
+
+            <h2>Year-Round Growing</h2>
+
+            <p>
+                Controlled lighting, temperature, and humidity can
+                help growers produce crops beyond normal outdoor
+                growing seasons.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="number">04 / FRESHNESS</div>
+            <div class="circle">🥬</div>
+
+            <h2>Fresh Local Produce</h2>
+
+            <p>
+                Growing food closer to consumers can shorten
+                transportation distances and help fresh produce
+                reach nearby markets sooner.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="number">05 / MONITORING</div>
+            <div class="circle">🌿</div>
+
+            <h2>Controlled Conditions</h2>
+
+            <p>
+                Monitoring nutrients, temperature, and lighting
+                helps growers maintain suitable conditions and
+                respond to changes in plant health.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="number">06 / SUSTAINABILITY</div>
+            <div class="circle">♻️</div>
+
+            <h2>Resource Conservation</h2>
+
+            <p>
+                Carefully designed systems can reduce land pressure
+                and nutrient runoff. Their overall environmental
+                impact also depends on energy requirements.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMPACT -->
+
+<section class="impact">
+    <h4 class="section-label">A NEW WAY FORWARD</h4>
+
+    <h1>Designed for Smarter Growing</h1>
+
+    <p>
+        Vertical farming brings technology and agriculture together
+        to explore new approaches to fresh food production.
+    </p>
+
+    <div class="impact-items">
+
+        <div class="impact-item">
+            <div class="impact-icon">🌾</div>
+            <h2>Less Land</h2>
+            <p>Grow upward and make better use of available space.</p>
+        </div>
+
+        <div class="impact-item">
+            <div class="impact-icon">💧</div>
+            <h2>Water Reuse</h2>
+            <p>Recirculate water through appropriately designed systems.</p>
+        </div>
+
+        <div class="impact-item">
+            <div class="impact-icon">🏙️</div>
+            <h2>Local Food</h2>
+            <p>Bring food production closer to urban communities.</p>
+        </div>
+
+        <div class="impact-item">
+            <div class="impact-icon">🌍</div>
+            <h2>Future Ready</h2>
+            <p>Explore adaptable methods of growing fresh produce.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<div class="box1">
+    <div class="content">
+
+        <div class="leaf">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20a10 10 0 0010-10 25.9 25.9 0
+                00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5
+                13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                <path d="M2 21a5 5 0 012.911-4.544C7.613
+                15.212 8.351 15.24 11 13"/>
+            </svg>
+        </div>
+
+        <h2>
+            Growing more food.<br>
+            For a better tomorrow.
+        </h2>
+
+        <button onclick="window.location.href='contacts.html'">
+            Get in Touch →
+        </button>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <div class="upper">
+
+        <a href="index.html" class="wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20a10 10 0 0010-10 25.9 25.9 0
+                00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5
+                13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                <path d="M2 21a5 5 0 012.911-4.544C7.613
+                15.212 8.351 15.24 11 13"/>
+            </svg>
+            <h2>GreenGrow</h2>
+        </a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="lower">
+        <h5>© 2026 GreenGrow. All rights reserved.</h5>
+    </div>
+</div>
+
+</body>
+</html>

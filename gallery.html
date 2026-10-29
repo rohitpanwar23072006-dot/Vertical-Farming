@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | GreenGrow</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .gallery-hero {
+            width: 100%;
+            height: 450px;
+            background-image:
+                linear-gradient(
+                    to right,
+                    rgba(0, 55, 35, 0.98) 0%,
+                    rgba(0, 55, 35, 0.85) 40%,
+                    rgba(0, 55, 35, 0.25) 75%,
+                    transparent 100%
+                ),
+                url("Futuristic Indoor 2 Vertical Farm Corridor.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .gallery-hero-content {
+            margin-left: 90px;
+            max-width: 650px;
+        }
+
+        .gallery-hero h1 {
+            font-size: 50px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .gallery-hero p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .gallery-intro {
+            width: 90%;
+            max-width: 1400px;
+            margin: 80px auto 50px;
+        }
+
+        .gallery-intro h5 {
+            color: #2E9D69;
+            margin-bottom: 15px;
+        }
+
+        .gallery-intro h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-intro p {
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 850px;
+        }
+
+        .featured {
+            width: 90%;
+            max-width: 1400px;
+            margin: 50px auto 80px;
+        }
+
+        .featured h1 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        .featured img {
+            display: block;
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .gallery-section {
+            width: 90%;
+            max-width: 1400px;
+            margin: 80px auto;
+        }
+
+        .gallery-section h5 {
+            color: #2E9D69;
+            margin-bottom: 15px;
+        }
+
+        .gallery-section h1 {
+            font-size: 40px;
+            margin-bottom: 35px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .gallery-card img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .gallery-card h2 {
+            font-size: 24px;
+            margin: 25px 25px 15px;
+        }
+
+        .gallery-card p {
+            font-size: 16px;
+            line-height: 27px;
+            margin: 0 25px 30px;
+        }
+
+        @media (max-width: 1100px) {
+            .gallery-hero-content {
+                margin-left: 50px;
+            }
+
+            .gallery-card img {
+                height: 260px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-hero {
+                height: 400px;
+            }
+
+            .gallery-hero-content {
+                margin: 0 30px;
+            }
+
+            .gallery-hero h1 {
+                font-size: 36px;
+            }
+
+            .gallery-intro h1,
+            .gallery-section h1 {
+                font-size: 32px;
+            }
+
+            .featured img {
+                height: 300px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card img {
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-hero h1 {
+                font-size: 30px;
+            }
+
+            .gallery-intro h1,
+            .gallery-section h1,
+            .featured h1 {
+                font-size: 28px;
+            }
+
+            .gallery-card img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/>
+            </svg>
+            <h1>GreenGrow</h1>
+        </div>
+
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="methods.html"><li>Methods</li></a>
+            <a href="benefits.html"><li>Benefits</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="contacts.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <h1>Explore the World of Vertical Farming</h1>
+            <p>
+                Innovative farming. Sustainable food.
+                A greener planet.
+            </p>
+        </div>
+    </section>
+
+    <section class="gallery-intro">
+        <h5>OUR GALLERY</h5>
+        <h1>Growing a Greener Future</h1>
+        <p>
+            Explore modern vertical farms, innovative growing methods,
+            and fresh produce. Discover how technology and sustainable
+            agriculture work together to grow food for tomorrow.
+        </p>
+    </section>
+
+    <section class="featured">
+        <h1>Inside a Vertical Farm</h1>
+        <img src="Futuristic Indoor 2 Vertical Farm Corridor.png" alt="Modern indoor vertical farm corridor">
+    </section>
+
+    <section class="gallery-section">
+        <h5>DISCOVER OUR METHODS</h5>
+        <h1>Farming Through Innovation</h1>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <img src="Hydroponic Lettuce Roots in Blue Water.png" alt="Hydroponic farming">
+                <h2>Hydroponics</h2>
+                <p>
+                    Grow plants using nutrient-rich water instead of soil,
+                    helping conserve resources while producing fresh crops.
+                </p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="Futuristic Aeroponic Lettuce Farm.png" alt="Aeroponic farming">
+                <h2>Aeroponics</h2>
+                <p>
+                    Grow plants with exposed roots supplied with nutrients
+                    through a fine mist.
+                </p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="Thriving Aquaponics Ecosystem a Daylight Greenhouse.png" alt="Aquaponic farming">
+                <h2>Aquaponics</h2>
+                <p>
+                    Combine fish farming and plant cultivation in a connected
+                    system that recycles nutrients.
+                </p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="Fresh Greens at GreenGrow Farm.png" alt="Freshly harvested produce">
+                <h2>Fresh Harvest</h2>
+                <p>
+                    Discover fresh produce grown through modern farming
+                    methods designed for efficient resource use.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="box1">
+        <div class="content">
+            <div class="leaf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                    <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/>
+                </svg>
+            </div>
+
+            <h2>Growing more food.<br>For a better tomorrow.</h2>
+
+            <button onclick="window.location.href='contacts.html'">
+                Get in Touch →
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="upper">
+            <div class="wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                    <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/>
+                </svg>
+                <h2>GreenGrow</h2>
+            </div>
+
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="methods.html"><li>Methods</li></a>
+                <a href="benefits.html"><li>Benefits</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="contacts.html"><li>Contact</li></a>
+            </ul>
+        </div>
+
+        <div class="lower">
+            <h5>© 2025 GreenGrow. All rights reserved.</h5>
+        </div>
+    </div>
+
+</body>
+</html>

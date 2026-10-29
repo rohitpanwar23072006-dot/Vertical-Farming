@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #F4F8F0;
+            font-family: "Inter", sans-serif;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        a{
+            color: #064E37;
+            text-decoration: none;
+        }
+        .logo{
+            align-items: center;
+            display: flex;
+            color: #064E37;
+        }
+        .logo svg{
+            width: 44px;
+            height: 55px;
+            margin-right: 20px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            color: #064E37;
+            font-weight: bold;
+            font-size: larger;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .content{
+            width: 1355px;
+            height: 150px;
+            background-color: #064E37;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .content h2{
+            margin-left: 40px;
+        }
+        .content button{
+            width: 180px;
+            height: 55px;
+            background-color: #BDECCF;
+            color: #064E37;
+            border: none;
+            border-radius: 40px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .leaf{
+            margin-left: 20px;
+            width: 170px;
+            min-height: 100px;
+            background-color: #064E37;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid #5A8F74;
+            box-sizing: border-box;
+        }
+        .content svg{
+            width: 100px;
+            height: 100px;
+            color: #BCECC7;
+        }
+        .footer{
+            width: 100%;
+            height: 230px;
+            background-color: #064E37;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .upper{
+            display: flex;
+            gap: 50px;
+            color: white;
+            width: 80%;
+            height: 40px;
+            border-bottom: 2px solid #5A8F74;
+        }
+        .upper ul{
+            color: white;
+            font-weight: lighter;
+            font-size: 15px;
+            margin-bottom: 40px;
+            margin-left: 160px;
+        }
+        .upper a{
+            color: white;
+        }
+        .upper h2{
+            margin-bottom: 40px;
+        }
+        .upper svg{
+            width: 50px;
+            height: 50px;
+            color: #BCECC7;
+            margin-bottom: 40px;
+        }
+        .lower{
+            margin-top: 40px;
+            color: white;
+            font-weight: lighter;
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 380px;
+            color: white;
+            background-image:
+                linear-gradient(
+                    to right,
+                    rgba(0, 55, 35, 0.98) 0%,
+                    rgba(0, 55, 35, 0.95) 30%,
+                    rgba(0, 55, 35, 0.75) 42%,
+                    rgba(0, 55, 35, 0.25) 58%,
+                    transparent 75%
+                ),
+                url(Futuristic\ Indoor\ 2\ Vertical\ Farm\ Corridor.png);
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero h4{
+            margin-left: 5px;
+            color: #7AE5AE;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        .hero h1{
+            font-size: 70px;
+        }
+        .hero p{
+            margin-left: 7px;
+            margin-top: 30px;
+            line-height: 25px;
+            word-spacing: 5px;
+            font-size: 20px;
+        }
+        .hero span{
+            color: #7AE5AE;
+        }
+        .main{
+            width: 100%;
+            height: 215vh;
+        }
+        .main h1{
+            margin-top: 80px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+        .main p{
+            margin-left: 80px;
+            line-height: 25px;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .box{
+            margin-bottom: 30px;
+            width: 90%;
+            height: 300px;
+            border: 2px solid #BCECC7;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .box img{
+            height: 250px;
+            width: 400px;
+            border-radius: 10px;
+            margin-left: 27px;
+        }
+        .information{
+            display: flex;
+            flex-direction: column;
+            height: 32vh;
+            width: 40vw;
+            border-right: 2px solid #BCECC7;
+        }
+        .information h1{
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+        .information p{
+            margin-left: 35px;
+            line-height: 30px;
+        }
+        .information h4{
+            margin-left: 35px;
+            font-size: 25px;
+            color: #5A8F74;
+        }
+        .para{
+            margin-bottom: 20px;
+        }
+        .circle2{
+            width: 150px;
+            height: 150px;
+            background-color: #BCECC7;
+            border-radius: 100px;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+            <h1>GreenGrow</h1>
+        </div>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="methods.html"><li>Methods</li></a>
+            <a href="benefits.html"><li>Benefits</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="contacts.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h4>OUR METHODS</h4>
+        <h1>Smarter Farming. <br> <span>Greater Impact.</span></h1>
+        <p>We use modern vertical farming methods to grow fresh, <br> healthy produce in controlled indoor enviornments. <br> By using space and water efficiently, we aim to create <br> a more sustainable food system for the future.</p>
+    </div>
+
+    <div class="main">
+        <h1>Technology. Nature.Together</h1>
+        <p>
+            Vertical farming combines innovative growing methods, <br> efficient lighting and enviornmental monitoring to create <br> suitable conditions for plant growth.
+        </p>
+
+        <div class="boxes">
+            <div class="box">
+                <img src="Hydroponic Lettuce Roots in Blue Water.png" alt="">
+                <div class="information">
+                    <div>
+                        <h4>01</h4>
+                        <h1>Hydroponics</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Hydroponics is a growing method in which plants <br> receive essential nutrients through water instead of <br> traditional soil. This allows plants to grow in vertically <br> stacked systems while making efficient use of space.
+                        </p>
+                    </div>
+                </div>
+                <div class="circle2">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="Futuristic Aeroponic Lettuce Farm.png" alt="">
+                <div class="information">
+                    <div>
+                        <h4>02</h4>
+                        <h1>Aeroponics</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Grow plants without soil by suspending their roots in <br> the air and spraying them with a nutrient-rich mist. <br> This technique promotes efficient water use, healthy <br> root development, and faster plant growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="circle2">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="Thriving Aquaponics Ecosystem a Daylight Greenhouse.png" alt="">
+                <div class="information">
+                    <div>
+                        <h4>03</h4>
+                        <h1>Aquaponics</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Combine fish farming with hydroponic plant cultivation <br> in a sustainable, interconnected system. Fish waste <br> provides nutrients for plants, while plants help filter the <br> water for the fish.
+                        </p>
+                    </div>
+                </div>
+                <div class="circle2">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="verticalFarming12.png" alt="">
+                <div class="information">
+                    <div>
+                        <h4>04</h4>
+                        <h1>Vertical Farming</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Maximize limited space by growing crops in vertically <br> stacked layers using controlled environments. This <br> modern technique enables year-round production, <br> efficient resource use, and fresh local produce.
+                        </p>
+                    </div>
+                </div>
+                <div class="circle2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="content">
+            <div class="leaf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+            </div>
+            <h2>Growing more food. <br> For a better tomorrow.</h2>
+            <button>
+                Get in Touch →
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="upper">
+            <div class="wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+                <h2>GreenGrow</h2>
+            </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="methods.html"><li>Methods</li></a>
+                <a href="benefits.html"><li>Benefits</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="contacts.html"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="lower">
+            <h5>© 2025 GreenGrow. All rights reserved.</h5>
+        </div>
+    </div>
+</body>
+</html>

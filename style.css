@@ -1,0 +1,581 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F8F0;
+    font-family: "Inter", sans-serif;
+    color: #064E37;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+a {
+    color: #064E37;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #064E37;
+}
+
+.logo svg {
+    width: 44px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #064E37;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.hero {
+    color: white;
+    width: 100%;
+    height: 550px;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 55, 35, 0.98) 0%,
+            rgba(0, 55, 35, 0.95) 30%,
+            rgba(0, 55, 35, 0.75) 42%,
+            rgba(0, 55, 35, 0.25) 58%,
+            transparent 75%
+        ),
+        url("Futuristic Symmetrical Vertical Farm.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.B1 {
+    margin-left: 90px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+
+button {
+    margin-top: 20px;
+    width: 180px;
+    height: 55px;
+    border: none;
+    border-radius: 40px;
+    background-color: #BDECCF;
+    font-weight: bold;
+    color: #064E37;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 80px auto;
+}
+
+.info > div:first-child {
+    flex: 1;
+}
+
+.info h5 {
+    color: #2E9D69;
+    margin-bottom: 15px;
+}
+
+.info h1 {
+    color: #064E37;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.info button {
+    margin-top: 10px;
+    border: 1px solid #064E37;
+    background-color: #F4F8F0;
+    color: #064E37;
+    font-size: 17px;
+}
+
+.info img {
+    width: 550px;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #064E37;
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 80px auto;
+}
+
+.box {
+    width: 25%;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    border-right: 1px solid #CFE3D2;
+}
+
+.box:last-child {
+    border-right: none;
+}
+
+.box svg {
+    width: 55px;
+    height: 55px;
+}
+
+.box h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.box p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* WHY CHOOSE US */
+
+.why {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 100px auto;
+}
+
+.why img {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.desc {
+    flex: 1;
+}
+
+.desc h5 {
+    color: #2E9D69;
+    margin-bottom: 15px;
+}
+
+.desc h1 {
+    color: #064E37;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.desc p {
+    color: #064E37;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+
+.tick {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 25px;
+    color: #218052;
+}
+
+.tick h4 {
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.tick svg {
+    flex-shrink: 0;
+}
+
+.info2 {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 70px auto;
+}
+
+.content {
+    width: 100%;
+    min-height: 150px;
+
+    background-color: #064E37;
+    border-radius: 15px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 20px 35px;
+}
+
+.content h2 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-left: 10px;
+}
+
+.content button {
+    margin-top: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+
+.leaf {
+    width: 150px;
+    min-height: 100px;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 2px solid #5A8F74;
+}
+
+.content svg {
+    width: 100px;
+    height: 100px;
+    color: #BCECC7;
+}
+
+
+.footer {
+    width: 100%;
+    min-height: 230px;
+    background-color: #064E37;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: white;
+    width: 85%;
+    max-width: 1300px;
+    min-height: 75px;
+
+    border-bottom: 2px solid #5A8F74;
+}
+
+.upper ul {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    gap: 25px;
+}
+
+.upper a {
+    color: white;
+}
+
+.upper h2 {
+    font-size: 25px;
+}
+
+.upper svg {
+    width: 50px;
+    height: 50px;
+    color: #BCECC7;
+}
+
+.lower {
+    margin-top: 35px;
+    color: white;
+    font-weight: lighter;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 1100px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    .info {
+        gap: 30px;
+    }
+
+    .info h1 {
+        font-size: 35px;
+    }
+
+    .info img {
+        width: 450px;
+        height: 350px;
+    }
+
+    .why {
+        gap: 35px;
+    }
+
+    .desc h1 {
+        font-size: 32px;
+    }
+
+    .info2 {
+        gap: 20px;
+    }
+
+    .upper ul {
+        gap: 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .B1 {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 60px auto;
+    }
+
+    .info h1 {
+        font-size: 35px;
+    }
+
+    .info img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .benefits {
+        flex-wrap: wrap;
+        margin: 60px auto;
+    }
+
+    .box {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .box:nth-child(2) {
+        border-right: none;
+    }
+
+    .why {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 70px auto;
+    }
+
+    .why img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    .info2 {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .leaf {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #5A8F74;
+    }
+
+    .content h2 {
+        margin-left: 0;
+    }
+
+    .content button {
+        margin: 10px auto 0;
+    }
+
+    .upper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .upper ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .info h1 {
+        font-size: 30px;
+    }
+
+    .desc h1 {
+        font-size: 28px;
+    }
+
+    .box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #CFE3D2;
+    }
+
+    .box:last-child {
+        border-bottom: none;
+    }
+
+    .info2 {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .content h2 {
+        font-size: 23px;
+    }
+
+    .lower {
+        text-align: center;
+    }
+}

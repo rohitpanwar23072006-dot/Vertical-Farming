@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GreenGrow</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F4F8F0;
+            font-family: "Inter", Arial, sans-serif;
+            color: #064E37;
+        }
+
+        a {
+            color: #064E37;
+            text-decoration: none;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #064E37;
+        }
+
+        .logo svg {
+            width: 44px;
+            height: 55px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        nav a:hover {
+            color: #5A8F74;
+        }
+
+        /* CONTACT HERO */
+
+        .contact-hero {
+            text-align: center;
+            padding: 80px 20px 65px;
+            background-color: #E8F3E7;
+        }
+
+        .contact-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #064E37;
+        }
+
+        .contact-hero p {
+            font-size: 18px;
+            color: #527361;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* CONTACT SECTION */
+
+        .contact-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 30px;
+            display: flex;
+            gap: 70px;
+            align-items: flex-start;
+        }
+
+        /* LEFT SIDE */
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            font-size: 16px;
+            color: #527361;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .info-icon {
+            width: 55px;
+            height: 55px;
+            background-color: #E8F3E7;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-icon svg {
+            width: 27px;
+            height: 27px;
+            color: #064E37;
+        }
+
+        .info-text h3 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .info-text p {
+            font-size: 15px;
+            color: #527361;
+            line-height: 1.7;
+        }
+
+        /* RIGHT SIDE CONTACT FORM */
+
+        .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .contact-form > p {
+            color: #527361;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #D6E5D8;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+            background-color: #FAFCF9;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #064E37;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #064E37;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0A704F;
+        }
+
+        /* EXTRA SECTION */
+
+        .contact-bottom {
+            text-align: center;
+            background-color: #E8F3E7;
+            padding: 70px 20px;
+        }
+
+        .contact-bottom h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .contact-bottom p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #527361;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            width: 100%;
+            min-height: 230px;
+            background-color: #064E37;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .upper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            color: white;
+            width: 80%;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #5A8F74;
+        }
+
+        .upper ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .upper a {
+            color: white;
+        }
+
+        .upper a:hover {
+            color: #BCECC7;
+        }
+
+        .upper svg {
+            width: 50px;
+            height: 50px;
+            color: #BCECC7;
+        }
+
+        .lower {
+            margin-top: 35px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            nav {
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 18px;
+                font-size: 15px;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 100%;
+            }
+
+            .upper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .upper ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact-hero h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .contact-form {
+                padding: 25px;
+            }
+
+            .contact-section {
+                padding: 50px 20px;
+            }
+
+            .contact-info h2 {
+                font-size: 28px;
+            }
+
+            .contact-bottom h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/>
+            </svg>
+            <h1>GreenGrow</h1>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="contact-hero">
+        <h1>GET IN TOUCH</h1>
+        <p>
+            Have questions about vertical farming or sustainable agriculture?
+            We'd love to hear from you. Connect with us and let's grow
+            a greener future together.
+        </p>
+    </section>
+
+
+    <section class="contact-section">
+
+
+        <div class="contact-info">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Whether you're curious about vertical farming,
+                interested in sustainable growing methods, or
+                simply want to learn more about GreenGrow,
+                we're here to help.
+            </p>
+
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                        <path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </div>
+
+                <div class="info-text">
+                    <h3>Email Us</h3>
+                    <p>rohitpanwar23072006@gmail.com</p>
+                </div>
+            </div>
+
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+
+                <div class="info-text">
+                    <h3>Our Location</h3>
+                    <p>India</p>
+                </div>
+            </div>
+
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+
+                <div class="info-text">
+                    <h3>Send Us a Message</h3>
+                    <p>
+                        Use our contact form to share your
+                        questions, suggestions, or feedback.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="contact-form">
+
+            <h2>Send a Message</h2>
+
+            <p>
+                Fill out the form below and share your
+                questions or suggestions with us.
+            </p>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="What is your message about?"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="contact-bottom">
+
+        <h2>Let's Grow a Greener Tomorrow</h2>
+
+        <p>
+            At GreenGrow, we believe sustainable agriculture
+            begins with awareness, innovation, and collaboration.
+            Together, we can explore smarter farming methods,
+            conserve resources, and create a healthier planet
+            for future generations.
+        </p>
+
+    </section>
+
+
+
+    <div class="footer">
+
+        <div class="upper">
+
+            <div class="wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/>
+                    <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/>
+                </svg>
+
+                <h2>GreenGrow</h2>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="lower">
+            <h5>© 2025 GreenGrow. All rights reserved.</h5>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

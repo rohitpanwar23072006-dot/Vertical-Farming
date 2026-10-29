@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F4F8F0;
+            font-family: "Inter", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #064E37;
+            text-decoration: none;
+        }
+
+        .logo {
+            align-items: center;
+            display: flex;
+            color: #064E37;
+        }
+
+        .logo svg {
+            width: 44px;
+            height: 55px;
+            margin-right: 20px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            color: #064E37;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            width: 1355px;
+            height: 150px;
+            background-color: #064E37;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            margin-left: 40px;
+        }
+
+        .content button {
+            width: 180px;
+            height: 55px;
+            background-color: #BDECCF;
+            color: #064E37;
+            border: none;
+            border-radius: 40px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .leaf {
+            margin-left: 20px;
+            width: 170px;
+            min-height: 100px;
+            background-color: #064E37;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid #5A8F74;
+            box-sizing: border-box;
+        }
+
+        .content svg {
+            width: 100px;
+            height: 100px;
+            color: #BCECC7;
+        }
+
+        .footer {
+            width: 100%;
+            height: 230px;
+            background-color: #064E37;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .upper {
+            display: flex;
+            gap: 50px;
+            color: white;
+            width: 80%;
+            height: 40px;
+            border-bottom: 2px solid #5A8F74;
+        }
+
+        .upper ul {
+            color: white;
+            font-weight: lighter;
+            font-size: 15px;
+            margin-bottom: 40px;
+            margin-left: 160px;
+        }
+
+        .upper a {
+            color: white;
+        }
+
+        .upper h2 {
+            margin-bottom: 40px;
+        }
+
+        .upper svg {
+            width: 50px;
+            height: 50px;
+            color: #BCECC7;
+            margin-bottom: 40px;
+        }
+
+        .lower {
+            margin-top: 40px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 250px;
+            background-color: #E8F3E7;
+        }
+
+        .hero h5 {
+            color: #164C3B;
+            padding-top: 40px;
+            padding-left: 100px;
+        }
+
+        .hero h1 {
+            color: #064E37;
+            padding-top: 10px;
+            padding-left: 100px;
+        }
+
+        .hero p {
+            padding-top: 10px;
+            padding-left: 100px;
+            color: #164C3B;
+            font-size: 15px;
+        }
+
+        .story {
+            display: flex;
+        }
+
+        .story img {
+            margin-top: 40px;
+            margin-left: 100px;
+            width: 500px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .story button {
+            height: 40px;
+            margin-top: 25px;
+            margin-left: 100px;
+            border: 1px solid #064E37;
+            border-radius: 20px;
+            background-color: #F4F8F0;
+            width: 180px;
+            color: #064E37;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .story h5 {
+            padding-top: 40px;
+            padding-left: 100px;
+            color: #5A8F74;
+        }
+
+        .story h1 {
+            padding-top: 10px;
+            padding-left: 100px;
+            color: #064E37;
+        }
+
+        .story p {
+            padding-top: 8px;
+            padding-left: 100px;
+            color: #5A8F74;
+            font-size: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .c {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            color: #064E37;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1.5px solid #BCECC7;
+        }
+
+        .c:last-child {
+            border-right: none;
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: #E8F3E7;
+            border: none;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle svg {
+            width: 50px;
+            height: 50px;
+            color: #5A8F74;
+        }
+
+        .why {
+            width: 100%;
+            height: 350px;
+            background-color: #E8F3E7;
+            display: flex;
+            align-items: center;
+        }
+
+        .why img {
+            margin-left: 100px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .left {
+            margin-left: 100px;
+            color: #164C3B;
+        }
+
+        .left h1 {
+            color: #064E37;
+        }
+
+        .right {
+            margin-left: 70px;
+        }
+
+        .info2 {
+            color: #164C3B;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info2 svg {
+            color: #164C3B;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+            <h1>GreenGrow</h1>
+        </div>
+
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="methods.html"><li>Methods</li></a>
+            <a href="benefits.html"><li>Benefits</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="contacts.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h5>ABOUT US</h5>
+        <h1>Rooted in Innovation, <br>Growing for a Greener Tomorrow</h1>
+        <p>
+            At GreenGrow, we believe that a healthier planet starts <br> with better food. We are a team of innovators, farmers and <br> change-makers, working together to make vertical farming <br> accessible, sustainable and a real solution for the future.
+        </p>
+    </div>
+
+    <div class="story">
+        <div>
+            <img src="closeup shot.png.png" alt="">
+        </div>
+
+        <div>
+            <h5>OUR STORY</h5>
+            <h1>From a Simple Idea <br> to a Sustainable Movement</h1>
+            <p>
+                GreenGrow started with a simple idea — what if we could grow <br>fresh, nutritious food in controlled environments, right where <br> people live? Today, we design and build vertical farming systems <br> that help communities, businesses and cities grow more food <br> with fewer resources.
+            </p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="c">
+            <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cannabis preview-icon"><path d="M12 22v-4"/><path d="M7 12c-1.5 0-4.5 1.5-5 3 3.5 1.5 6 1 6 1-1.5 1.5-2 3.5-2 5 2.5 0 4.5-1.5 6-3 1.5 1.5 3.5 3 6 3 0-1.5-.5-3.5-2-5 0 0 2.5.5 6-1-.5-1.5-3.5-3-5-3 1.5-1 4-4 4-6-2.5 0-5.5 1.5-7 3 0-2.5-.5-5-2-7-1.5 2-2 4.5-2 7-1.5-1.5-4.5-3-7-3 0 2 2.5 5 4 6"/></svg>
+            </div>
+            <h3>Sustanibility</h3>
+            <p>
+                Growing food with less water,<br>land and environmental impact.
+            </p>
+        </div>
+
+        <div class="c">
+            <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-group preview-icon"><path d="M17 21a5 5 0 00-10 0"/><path d="M22 10.5a3.5 3.5 0 00-5.507-2.868"/><path d="M7.507 7.632A3.5 3.5 0 002 10.5"/><circle cx="12" cy="13" r="3"/><circle cx="18.5" cy="4.5" r="2.5"/><circle cx="5.5" cy="4.5" r="2.5"/></svg>
+            </div>
+            <h3>Community</h3>
+            <p>
+                Supporting healthier<br>and stronger communities.
+            </p>
+        </div>
+
+        <div class="c">
+            <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb preview-icon"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3>Innovation</h3>
+            <p>
+                Using technology to create<br>smarter farming solutions.
+            </p>
+        </div>
+
+        <div class="c">
+            <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check preview-icon"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Quality</h3>
+            <p>
+                Fresh, safe and nutritious<br>produce, always.
+            </p>
+        </div>
+    </div>
+
+    <div class="why">
+        <div class="left">
+            <h1>A Healthier Future<br>Grows Here</h1>
+            <p>
+                We're not just growing crops — we're growing possibilities. <br> By combining technology, sustainability and a deep care <br> for people and the planet, GreenGrow is helping <br> build a food system that works for everyone.
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="info2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check preview-icon"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
+                <p>Fresh, local and nutritious food</p>
+            </div>
+            <br>
+            <div class="info2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check preview-icon"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
+                <p>Lower environmental footprint</p>
+            </div>
+            <br>
+            <div class="info2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check preview-icon"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
+                <p>Efficient use of resources</p>
+            </div>
+            <br>
+            <div class="info2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check preview-icon"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
+                <p>Stronger, healthier communities</p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="verticalFarming12.png" alt="">
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="content">
+            <div class="leaf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+            </div>
+            <h2>Growing more food. <br> For a better tomorrow.</h2>
+            <button>Get in Touch →</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="upper">
+            <div class="wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf preview-icon"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></svg>
+                <h2>GreenGrow</h2>
+            </div>
+
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="methods.html"><li>Methods</li></a>
+                <a href="benefits.html"><li>Benefits</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="contacts.html"><li>Contact</li></a>
+            </ul>
+        </div>
+
+        <div class="lower">
+            <h5>© 2025 GreenGrow. All rights reserved.</h5>
+        </div>
+    </div>
+</body>
+</html>
